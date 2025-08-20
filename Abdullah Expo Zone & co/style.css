@@ -4,31 +4,28 @@ body {
   line-height: 1.6;
 }
 
-
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #082041;  
-  padding: 8px 30px;    
+  background: #082041;
+  padding: 10px 30px;
   position: sticky;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  height: 80px;         
-  overflow: hidden;     
+  z-index: 1300; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  height: 80px;
 }
 
-/* Logo */
+
 .navbar-img {
-  max-height: 160px; 
+  max-height: 100px; 
   width: auto;
-  margin-left: 10px;
   cursor: pointer;
+  z-index: 1100;
 }
 
-
-/* Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -40,40 +37,36 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #415bd3;   /* Yellow hover effect */
-  border-bottom: 2px solid #646154;
+  color: #ffcc00;
 }
 
-/* Active link highlight */
-.nav-links li a.active {
-  color: #4d5bad;
-  border-bottom: 2px solid #3b58b4;
-}
 
-/* Mobile Menu */
 .menu-toggle {
-  display: none;
-  font-size: 28px;
+  display: none;         
+  font-size: 36px;     
   cursor: pointer;
-  color: white;
+  color: #ffcc00;
+  z-index: 1200;          
+  position: relative;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #003366;
+    background: rgba(0,51,102,0.95); /* semi-transparent */
     position: absolute;
     top: 70px;
     right: 0;
-    width: 200px;
+    width: 220px;
     padding: 20px;
     border-radius: 0 0 8px 8px;
+    z-index: 1100;
   }
 
   .nav-links.show {
@@ -84,7 +77,6 @@ body {
     display: block;
   }
 }
-
 
 .hero {
   background: url('/sh.jpg') center/cover no-repeat;
