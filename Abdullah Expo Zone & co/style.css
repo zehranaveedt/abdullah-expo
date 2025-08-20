@@ -41,7 +41,7 @@ body {
 }
 
 .nav-links li a:hover {
-  color: #ffcc00;
+  color: #38379e;
 }
 
 
@@ -49,7 +49,7 @@ body {
   display: none;         
   font-size: 36px;     
   cursor: pointer;
-  color: #ffcc00;
+  color: #e5e3ee;
   z-index: 1200;          
   position: relative;
 }
@@ -128,8 +128,7 @@ body {
 
 .categories,
 .about,
-.contact,
-.certificate{
+.contact{
   padding: 50px 20px;
   text-align: center;
 }
@@ -167,6 +166,39 @@ body {
 .service-box:hover {
   background: #eaeaea;
   transform: translateY(-5px);
+}
+.certificate {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.certificate h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.cert-icons i {
+  font-size: 40px;
+  color: #0b4966;
+  margin: 0 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.cert-icons i:hover {
+  transform: scale(1.2);
+  color: #e62416;
 }
 
 .categories-container {
